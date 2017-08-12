@@ -1,0 +1,5 @@
+{
+  "extends": [ "prettier" ],
+  "plugins": [ "prettier" ],
+  "parserOptions": { "ecmaVersion": 2016 }
+}
