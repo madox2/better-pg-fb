@@ -28,7 +28,9 @@
   }
 
   function all() {
-    const posts = Array.from(document.querySelectorAll('.fbUserContent'));
+    const posts = Array.from(
+      document.querySelectorAll('div[data-testid="fbfeed_story"]')
+    );
     const isOuterPost = post =>
       !posts.find(p => p !== post && p.contains(post));
     return posts.filter(isOuterPost);
